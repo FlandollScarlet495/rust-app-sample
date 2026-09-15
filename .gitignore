@@ -1,6 +1,7 @@
 # Cargo & xtask のビルド・配布成果物
 target/
 dist/
+git_github.txt
 
 # rustfmt のバックアップファイル
 **/*.rs.bk

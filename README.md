@@ -1,5 +1,8 @@
 # Rust App Sample
 
+![Version](https://img.shields.io/badge/version-v0.0.1--alpha.2-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 このリポジトリは、Rust のワークスペース構成で、コアライブラリ・ユーティリティ・プラグイン・ローカライズ対応を組み合わせたサンプルアプリケーションです。
 
 主な特徴:
@@ -103,6 +106,10 @@ dist/
 - 実行時に必要な DLL / .so / .dylib は `dist/` 配下に配置される前提で、プラグイン側は実行ファイルの近くにある `libraries` や `plugins` を探します。
 - ローカライズは `lang_code` を正規化して、完全一致→主要言語一致→フォールバックの順で解決します。
 - `--debug` または `-d` を付けると、各処理の内部ログが出力されます。
+
+## リリース
+
+最新のプレリリース、ソースコード、およびバイナリ成果物は [Releases](https://github.com/FlandollScarlet495/rust-app-sample/releases) ページから確認・ダウンロードできます。
 
 ## ライセンス
 
