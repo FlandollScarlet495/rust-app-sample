@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+members = [
+    "main",
+    "libraries/*",
+    "plugins/*",
+    "xtask",
+]
+
+[workspace.dependencies]
+core = { path = "libraries/core" }
+debug_util = { path = "libraries/debug_util" }
+common_build = { path = "plugins/common_build" }
