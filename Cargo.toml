@@ -7,6 +7,13 @@ members = [
     "xtask",
 ]
 
+[workspace.package]
+version = "0.0.1-alpha.2"
+edition = "2021"
+authors = ["きりしまあおい nakamurakensuke5@gmail.com"]
+repository = "https://github.com/FlandollScarlet495/rust-app-sample"
+license = "MIT"
+
 [workspace.dependencies]
 core = { path = "libraries/core" }
 debug_util = { path = "libraries/debug_util" }

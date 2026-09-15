@@ -35,7 +35,7 @@ fn main() {
     let all_targets = vec![
         // --- Windows ---
         TargetConfig {
-            alias: "win-x86_64",
+            alias: "windows-x86_64",
             os_dir: "windows/x86_64",
             triple: "x86_64-pc-windows-msvc",
             exe_ext: "exe",
@@ -43,7 +43,7 @@ fn main() {
             lib_suffix: "dll",
         },
         TargetConfig {
-            alias: "win-x86",
+            alias: "windows-x86",
             os_dir: "windows/x86",
             triple: "i686-pc-windows-msvc",
             exe_ext: "exe",
@@ -51,7 +51,7 @@ fn main() {
             lib_suffix: "dll",
         },
         TargetConfig {
-            alias: "win-arm64",
+            alias: "windows-arm64",
             os_dir: "windows/arm64",
             triple: "aarch64-pc-windows-msvc",
             exe_ext: "exe",

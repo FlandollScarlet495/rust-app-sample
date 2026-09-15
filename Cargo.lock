@@ -10,15 +10,15 @@ checksum = "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801"
 
 [[package]]
 name = "common_build"
-version = "0.1.0"
+version = "0.0.1-alpha.2"
 
 [[package]]
 name = "core"
-version = "0.1.0"
+version = "0.0.1-alpha.2"
 
 [[package]]
 name = "debug_util"
-version = "0.1.0"
+version = "0.0.1-alpha.2"
 
 [[package]]
 name = "fs_extra"
@@ -38,7 +38,7 @@ dependencies = [
 
 [[package]]
 name = "main"
-version = "0.1.0"
+version = "0.0.1-alpha.2"
 dependencies = [
  "debug_util",
  "libloading",
@@ -46,7 +46,7 @@ dependencies = [
 
 [[package]]
 name = "plugin_sample"
-version = "0.1.0"
+version = "0.0.1-alpha.2"
 dependencies = [
  "common_build",
  "core",
@@ -61,7 +61,7 @@ checksum = "f0805222e57f7521d6a62e36fa9163bc891acd422f971defe97d64e70d0a4fe5"
 
 [[package]]
 name = "xtask"
-version = "0.1.0"
+version = "0.0.1-alpha.2"
 dependencies = [
  "fs_extra",
 ]
