@@ -3,7 +3,7 @@
 ![Version](https://img.shields.io/badge/version-v0.0.1--alpha.2-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-このリポジトリは、Rust のワークスペース構成で、コアライブラリ・ユーティリティ・プラグイン・ローカライズ対応を組み合わせたサンプルアプリケーションです。
+このリポジトリは、Rust のワークスペース構成で、コアライブラリ・ユーティリティ・プラグイン・ローカライズ対応・スクリプト類を組み合わせたサンプルアプリケーションです。
 
 主な特徴:
 
@@ -88,6 +88,7 @@ dist/
       plugins/
       Languages/
       PluginsLanguages/
+      scripts/
 
 ```
 
@@ -100,6 +101,7 @@ dist/
 - `plugins/plugin_sample/src/plugin_sample.rs` : サンプルプラグイン
 - `Languages/ja-jp.lang` : 共通メッセージ
 - `PluginsLanguages/plugin_sample/ja-jp.lang` : プラグイン用メッセージ
+- `scripts/` : 配信・同梱用スクリプトディレクトリ
 
 ## 注意事項
 

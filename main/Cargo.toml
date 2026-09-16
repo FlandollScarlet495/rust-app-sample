@@ -13,6 +13,8 @@ embed-lang = []
 [dependencies]
 libloading = "0.8"
 debug_util = { path = "../libraries/debug_util" }
+mlua = { version = "0.9", features = ["lua54", "vendored"] }
+walkdir = "2"
 
 [[bin]]
 name = "main"

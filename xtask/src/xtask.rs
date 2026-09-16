@@ -156,11 +156,13 @@ fn main() {
         let plugin_dir = dist_os_dir.join("plugins");
         let lang_dir = dist_os_dir.join("Languages");
         let plugin_lang_dir = dist_os_dir.join("PluginsLanguages");
+        let scripts_dir = dist_os_dir.join("scripts");
 
         fs::create_dir_all(&lib_dir).ok();
         fs::create_dir_all(&plugin_dir).ok();
         fs::create_dir_all(&lang_dir).ok();
         fs::create_dir_all(&plugin_lang_dir).ok();
+        fs::create_dir_all(&scripts_dir).ok();
 
         let mut cmd = Command::new("cargo");
 
@@ -240,6 +242,13 @@ fn main() {
         let src_plugin_lang = Path::new("PluginsLanguages");
         if src_plugin_lang.exists() {
             copy_dir_all(src_plugin_lang, &plugin_lang_dir);
+        }
+
+        // プロジェクト直下の scripts/ を dist/*/scripts/ 配下に再帰コピー
+        let src_scripts = Path::new("scripts");
+        if src_scripts.exists() {
+            copy_dir_all(src_scripts, &scripts_dir);
+            println!("Copied scripts directory to {:?}", scripts_dir);
         }
     }
 
